@@ -21,7 +21,11 @@ Through these projects I aim to:
 If you'd like to contribute to the development of this application, please follow these steps:
 
 Fork the repository
+
 Create a new branch for your feature or bug fix
+
 Make your changes and commit them
+
 Push your changes to your fork
+
 Create a pull request
