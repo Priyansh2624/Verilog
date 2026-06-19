@@ -88,7 +88,11 @@ The design is constructed hierarchically using 4-bit CLA blocks and synthesized,
 
 ---
 
-## Generated Files
+## Author
+
+Priyansh Sarkar
+
+B.Tech Electronics (VLSI Design and Technology)
 
 ### Layout Files
 
