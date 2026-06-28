@@ -379,4 +379,99 @@ Thus, the FIFO always preserves the order in which the data was written.
 
 ---
 
+# ASIC Implementation Results
+
+The synchronous FIFO was successfully implemented using the **OpenLane2 RTL-to-GDSII flow** on the **SkyWater SKY130A PDK**. The implementation includes logic synthesis, floorplanning, power planning, placement, clock tree synthesis (CTS), routing, static timing analysis (STA), design rule checking (DRC), layout-versus-schematic (LVS) verification, and GDSII generation.
+
+---
+
+## Implementation Summary
+
+| Parameter | Value |
+|-----------|------:|
+| Technology | SKY130A |
+| ASIC Flow | OpenLane2 |
+| RTL Language | Verilog HDL |
+| Layout Viewer | KLayout |
+| Final Output | GDSII |
+
+---
+
+# Physical Design Results
+
+| Metric | Value |
+|---------|------:|
+| Standard Cell Area | **46,859.90 μm²** |
+| Total Die Area | **2,250,000 μm²** |
+| Standard Cell Utilization | **2.779%** |
+
+---
+
+# Timing Analysis
+
+| Metric | Value |
+|---------|------:|
+| Worst Negative Slack (WNS) | **0.000 ns** |
+| Total Negative Slack (TNS) | **0.000 ns** |
+| Timing Closure | ✅ Achieved |
+
+The post-route static timing analysis indicates that the design meets the specified timing constraints with **no setup timing violations**.
+
+---
+
+# Power Analysis
+
+| Component | Value |
+|-----------|------:|
+| Internal Power | **2.455 mW** |
+| Switching Power | **1.179 mW** |
+| Leakage Power | **0.117 μW** |
+| Total Power | **2.897 mW** |
+
+Power estimation was performed after routing using the OpenROAD analysis integrated within the OpenLane2 flow.
+
+---
+
+# Physical Verification
+
+| Check | Status |
+|--------|--------|
+| Design Rule Check (DRC) | ✅ Passed |
+| Layout Versus Schematic (LVS) | ✅ Passed |
+| GDSII Generation | ✅ Successful |
+
+---
+
+# ASIC Design Flow
+
+- RTL Design (Verilog)
+- Functional Verification
+- Logic Synthesis
+- Floorplanning
+- Power Distribution Network (PDN)
+- Standard Cell Placement
+- Clock Tree Synthesis (CTS)
+- Global Routing
+- Detailed Routing
+- Static Timing Analysis (STA)
+- DRC & LVS Verification
+- Final GDSII Generation
+
+---
+
+# Project Highlights
+
+- Parameterized **8 × 32-bit Synchronous FIFO**
+- Implemented using **OpenLane2**
+- Fabrication-ready **GDSII** generated
+- Successfully achieved **timing closure (WNS = 0 ns, TNS = 0 ns)**
+- Verified through **DRC** and **LVS**
+- Physical layout inspected using **KLayout**
+
+## Author
+
+**Priyansh Sarkar**
+
+B.Tech in Electronics (VLSI Design and Technology)
+
 
