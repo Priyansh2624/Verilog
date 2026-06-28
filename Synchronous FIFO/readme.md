@@ -379,6 +379,4 @@ Thus, the FIFO always preserves the order in which the data was written.
 
 ---
 
-# Summary
 
-This synchronous FIFO implementation uses a parameterized memory array, independent read and write pointers, and a circular buffer architecture to efficiently store and retrieve data. Read and write operations occur only on the rising edge of the clock when the appropriate control signals are asserted. The use of an additional pointer bit enables accurate detection of full and empty conditions while allowing the FIFO memory to be reused continuously without shifting stored data.
